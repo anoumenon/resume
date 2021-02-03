@@ -1,3 +1,27 @@
+#inkPlace{
+  height:500px;
+}
+
+#inkDiv{
+  margin-top: 100px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.ink {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+/* ZOMBIE CODE */
+
 /* body {
     background-color: whitesmoke;
   }
@@ -25,35 +49,3 @@
       background-color: red;
     }
   } */
-
-#inkPlace{
-  height:500px;
-}
-
-#inkDiv{
-  margin-top: 100px;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  width: 150px;
-  height: 150px;
-}
-
-.ink {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    border: 1px solid black;
-    border-radius: 50%;
-}
-
-.ink1 {z-index: 0;}
-.ink2 {z-index: 1;}
-.ink3 {z-index: 2;}
-.ink4 {z-index: 3;}
-.ink5 {z-index: 4;}
-.ink6 {z-index: 5;}
-.ink7 {z-index: 6;}
-.ink8 {z-index: 7;}
-.ink9 {z-index: 8;}

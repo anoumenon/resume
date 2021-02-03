@@ -49,7 +49,7 @@ $(document).ready(function() {
     $html.mousemove(function(event) {
         let mouseX = event.pageX;
         let mouseY = event.pageY;
-        console.log(event.pageX, event.pageY);
+        // console.log(event.pageX, event.pageY);
 
         // corners
         if((     mouseX < imageLeft) && (mouseY < imageTop)){hideAngles(); $ink1.show();}
