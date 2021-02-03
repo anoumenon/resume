@@ -23,7 +23,6 @@ $(document).ready(function() {
         $ink8.hide();
         $ink9.hide();
     }
-
     hideAngles();
 
     let imageTop;
@@ -31,24 +30,40 @@ $(document).ready(function() {
 	let imageLeft;
     let imageRight;
     var $inkDiv = $('#inkDiv');
-    var $html = $('html');
+    var $html=$('html');
+
+    // let center = ($(window).width())/2;
 
     function inkInit(){
-
         imageTop = $inkDiv.offset().top;
-        console.log(imageTop);
-        imageBottom = $inkDiv.offset().top + 150;
-        console.log(imageBottom);
+        imageBottom = imageTop + 150;
         imageLeft = $inkDiv.offset().left;
-        console.log(imageLeft);
-        imageRight = $inkDiv.offset().left + 150;
-        console.log(imageRight);
+        imageRight = imageLeft + 150;
     }
-
     inkInit();
 
+    $( window ).resize(function() {
+        picPlaceInit();
+      });
+
     $html.mousemove(function(event) {
-        console.log(event.pageX, event.pageY);
+        let mouseX = event.pageX;
+        let mouseY = event.pageY;
+        // console.log(event.pageX, event.pageY);
+
+        // top left
+        if((     mouseX < imageLeft) && (mouseY < imageTop)){hideAngles(); $ink1.show();}
+        else if((mouseX < imageLeft) && (mouseY > imageBottom)){hideAngles(); $ink7.show();}
+        else if((mouseX > imageRight) && (mouseY < imageTop)){hideAngles(); $ink3.show();}
+        else if((mouseX > imageRight) && (mouseY > imageBottom)){hideAngles(); $ink9.show();}
+        else{hideAngles();}
+
+
+// else{hideAngles();}
+        
+
+        
+
     });
 
 });

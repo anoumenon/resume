@@ -26,8 +26,18 @@
     }
   } */
 
+#inkPlace{
+  height:500px;
+}
+
 #inkDiv{
+  margin-top: 100px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
+  width: 150px;
+  height: 150px;
 }
 
 .ink {
