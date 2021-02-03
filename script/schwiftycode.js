@@ -43,26 +43,32 @@ $(document).ready(function() {
     inkInit();
 
     $( window ).resize(function() {
-        picPlaceInit();
+        inkInit();
       });
 
     $html.mousemove(function(event) {
         let mouseX = event.pageX;
         let mouseY = event.pageY;
-        // console.log(event.pageX, event.pageY);
+        console.log(event.pageX, event.pageY);
 
-        // top left
+        // corners
         if((     mouseX < imageLeft) && (mouseY < imageTop)){hideAngles(); $ink1.show();}
         else if((mouseX < imageLeft) && (mouseY > imageBottom)){hideAngles(); $ink7.show();}
         else if((mouseX > imageRight) && (mouseY < imageTop)){hideAngles(); $ink3.show();}
         else if((mouseX > imageRight) && (mouseY > imageBottom)){hideAngles(); $ink9.show();}
+
+        // edges
+
+        //left
+        else if((mouseX < imageLeft) && (mouseY > imageTop) && (mouseY < imageBottom)){hideAngles(); $ink4.show();}
+        //top
+        else if((mouseY < imageTop) && (mouseX > imageLeft) && (mouseX < imageRight)){hideAngles(); $ink2.show();}
+        //right
+        else if((mouseX > imageRight) && (mouseY > imageTop) && (mouseY < imageBottom)){hideAngles(); $ink6.show();}
+        //bottom
+        else if((mouseY > imageBottom) && (mouseX > imageLeft) && (mouseX < imageRight)){hideAngles(); $ink8.show();}
+
         else{hideAngles();}
-
-
-// else{hideAngles();}
-        
-
-        
 
     });
 
