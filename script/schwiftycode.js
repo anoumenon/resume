@@ -11,27 +11,7 @@ $(document).ready(function() {
     var $ink7 = $( '#ink7' );
     var $ink8 = $( '#ink8' );
     var $ink9 = $( '#ink9' );
-
-    let imageTop;
-	let imageBottom;
-	let imageLeft;
-    let imageRight;
-    var $inkDiv = $('#inkDiv');
     
-    function inkInit(){
-
-        imageTop = $inkDiv.offset().top;
-        console.log(imageTop);
-        imageBottom = $inkDiv.offset().top + 150;
-        console.log(imageBottom);
-        imageLeft = $inkDiv.offset().left;
-        console.log(imageLeft);
-        imageRight = $inkDiv.offset().left + 150;
-        console.log(imageRight);
-    }
-
-    inkInit();
-
     function hideAngles(){
         $ink1.hide();
         $ink2.hide();
@@ -46,4 +26,29 @@ $(document).ready(function() {
 
     hideAngles();
 
-        });
+    let imageTop;
+	let imageBottom;
+	let imageLeft;
+    let imageRight;
+    var $inkDiv = $('#inkDiv');
+    var $html = $('html');
+
+    function inkInit(){
+
+        imageTop = $inkDiv.offset().top;
+        console.log(imageTop);
+        imageBottom = $inkDiv.offset().top + 150;
+        console.log(imageBottom);
+        imageLeft = $inkDiv.offset().left;
+        console.log(imageLeft);
+        imageRight = $inkDiv.offset().left + 150;
+        console.log(imageRight);
+    }
+
+    inkInit();
+
+    $html.mousemove(function(event) {
+        console.log(event.pageX, event.pageY);
+    });
+
+});
