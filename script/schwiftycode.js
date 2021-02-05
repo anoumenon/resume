@@ -60,13 +60,13 @@ $(document).ready(function() {
         // edges
 
         //left
-        else if((mouseX <= imageLeft) && (mouseY >= imageTop) && (mouseY <= imageBottom)){hideAngles(); $ink4.show();}
+        else if((mouseX < imageLeft) && (mouseY > imageTop) && (mouseY < imageBottom)){hideAngles(); $ink4.show();}
         //top
-        else if((mouseY <= imageTop) && (mouseX >= imageLeft) && (mouseX <= imageRight)){hideAngles(); $ink2.show();}
+        else if((mouseY < imageTop) && (mouseX > imageLeft) && (mouseX < imageRight)){hideAngles(); $ink2.show();}
         //right
-        else if((mouseX >= imageRight) && (mouseY >= imageTop) && (mouseY <= imageBottom)){hideAngles(); $ink6.show();}
+        else if((mouseX > imageRight) && (mouseY > imageTop) && (mouseY < imageBottom)){hideAngles(); $ink6.show();}
         //bottom
-        else if((mouseY >= imageBottom) && (mouseX >= imageLeft) && (mouseX <= imageRight)){hideAngles(); $ink8.show();}
+        else if((mouseY > imageBottom) && (mouseX > imageLeft) && (mouseX < imageRight)){hideAngles(); $ink8.show();}
 
         else{hideAngles();}
 

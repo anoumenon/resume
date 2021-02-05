@@ -1,45 +1,47 @@
 :root {
   --cla: #272822;
-  --orc: #F92672;
-  --bou: #66D9EF;
-  --hen: #A6E22E;
-  --pum: #FD971F;
+  --crm: #f0f0f0;
 }
 
 html {
   background-color: var(--cla);
+  font-family: 'Open Sans', sans-serif;
 }
 
 #inkPlace{
   margin-top: 75px;
-  
   background-color: var(--cla);
 }
 
 #inkDiv{
   /* margin-bottom: auto; */
   /* margin-right: auto; */
-  padding-left: 75px;
+  margin:0 auto;
   position: relative;
   width: 150px;
   height: 150px;
-  display: inline-block;
-  background-color: var(--cla2);
+  background-color: var(--cla);
 }
 
 .ink {
     position: absolute;
     width: 150px;
     height: 150px;
-    border: 1px solid black;
+    border: 2px solid var(--crm);
     border-radius: 50%;
+}
+
+#name {
+  background-color: var(--cla);
+  text-align: center;
 }
 
 h1 {
   font-size: 50px;
-  display: inline;
-  color: var(--hen);
+  
+  color: var(--crm);
 }
+
 
 /* ZOMBIE CODE */
 
