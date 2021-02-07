@@ -36,16 +36,29 @@ html {
   text-align: center;
 }
 
+p {
+  line-height: 1.6;
+}
+
 h1 {
   font-size: 50px;
   padding-top:15px;
   color: var(--crm);
+  font-weight: bold;
 }
 
 h2 {
   font-size: 25px;
   color: var(--crm);
   padding: 15px 0px 15px 0px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 18px;
+  color: var(--crm);
+  padding: 15px 0px 15px 0px;
+  font-weight: bold;
 }
 
 main {
@@ -62,6 +75,11 @@ main section {
   border-color: var(--crm);
   padding-bottom:15px;
   padding-bottom:15px;
+}
+
+footer {
+  height: 50px;
+  background-color: var(--cla);
 }
 /* ZOMBIE CODE */
 
