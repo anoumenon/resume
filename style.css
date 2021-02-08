@@ -81,6 +81,18 @@ footer {
   height: 50px;
   background-color: var(--cla);
 }
+
+td, th {
+  border: 1px solid #272822;
+  padding-top: .7rem;
+  padding-bottom: .7rem;
+  padding-left: 0rem;
+  padding-right: 3rem;
+}
+
+th {
+  font-weight: bold;
+}
 /* ZOMBIE CODE */
 
 /* body {
