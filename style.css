@@ -83,7 +83,7 @@ footer {
 }
 
 td, th {
-  border: 1px solid #272822;
+  /* border: 1px solid #272822; */
   padding-top: .7rem;
   padding-bottom: .7rem;
   padding-left: 0rem;
@@ -92,6 +92,10 @@ td, th {
 
 th {
   font-weight: bold;
+}
+
+a {
+  color: var(--crm);
 }
 /* ZOMBIE CODE */
 
