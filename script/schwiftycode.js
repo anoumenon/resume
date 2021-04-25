@@ -55,9 +55,9 @@ $(document).ready(function() {
     function inkInit(){
 
         imageTop = $inkDiv.offset().top;
-        imageBottom = imageTop + 150;
+        imageBottom = imageTop + 200;
         imageLeft = $inkDiv.offset().left;
-        imageRight = imageLeft + 150;
+        imageRight = imageLeft + 200;
     }
     inkInit();
 
