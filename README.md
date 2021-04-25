@@ -1,5 +1,6 @@
 ## R E S U M E
 
+This repo is a gitHub pages version of my resume which serves as my professional profile.
 
 This repo also contains three papers which summarize my interest between neurology, graph theory, and theology.
 
