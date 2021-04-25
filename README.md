@@ -2,6 +2,8 @@
 
 This repo is a gitHub pages version of my resume which serves as my professional profile.
 
+Host link: https://anoumenon.github.io/resume/
+
 This repo also contains three papers which summarize my interest between neurology, graph theory, and theology.
 
 [ambidexterity](https://github.com/anoumenon/resume/blob/main/assets/Ambidexterity.pdf) : Why so many genii were ambidextrous.
